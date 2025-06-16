@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import net.minecraft.client.gui.components.AbstractWidget;
 import net.minecraft.client.gui.screens.DeathScreen;
+import net.minecraft.client.resources.language.I18n;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ScreenEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -20,7 +21,7 @@ public class NoRespawn {
                 .collect(Collectors.toList());
 
             for (AbstractWidget button : widgets) {
-                if (button.getMessage().getString().equals("Respawn")) { // Directly checking the button text
+                if (button.getMessage().getString().equals(I18n.get("deathScreen.respawn"))) {
                     button.active = false;  // Disable the respawn button
                 }
             }
