@@ -15,23 +15,16 @@ import net.minecraftforge.fml.common.Mod;
 public class NoRespawn {
     @SubscribeEvent
     public static void onGuiRender(ScreenEvent.Render.Post event) {
-        System.out.println("ScreenEvent fired: " + event.getScreen().getClass().getName());
-
         if (event.getScreen() instanceof DeathScreen || event.getScreen() instanceof TitleConfirmScreen) {
-            System.out.println("DeathScreen or TitleConfirmScreen detected!");
-
             List<AbstractWidget> widgets = event.getScreen().children().stream()
                 .filter(AbstractWidget.class::isInstance)
                 .map(AbstractWidget.class::cast)
                 .collect(Collectors.toList());
 
             for (AbstractWidget button : widgets) {
-                System.out.println("Found button: " + button.getMessage().getString());
-
                 if (button.getMessage().getString().equals(I18n.get("deathScreen.respawn")) ||
                     button.getMessage().getString().equals(I18n.get("deathScreen.titleScreen"))) {
-                    System.out.println("Disabling button: " + button.getMessage().getString());
-                    button.active = false;  // Disable the respawn and title screen buttons
+                    button.active = false;
                 }
             }
         }
