@@ -1,0 +1,13 @@
+{
+  "gui.deathbsod.about_start_gui.label_your_pc_when_you_die": "Your PC When You Die",
+  "gui.deathbsod.about_start_gui.label_this_mod_blue_screens_your_pc_wh": "This Mod Blue Screens",
+  "gui.deathbsod.about_start_gui.label_it_wont_damage_your_pc_but_will": "It Wont Damage Your PC,",
+  "gui.deathbsod.about_start_gui.label_windows_only": "Windows Only.",
+  "gui.deathbsod.about_start_gui.label_but": "BUT",
+  "gui.deathbsod.about_start_gui.label_req_python_powershell_java": "Req: Python, Powershell, Java",
+  "gui.deathbsod.about_start_gui.label_have_fun": "Have Fun!",
+  "gui.deathbsod.about_start_gui.button_accept_conditions": "Accept Conditions",
+  "gui.deathbsod.about_start_gui.label_info": "Info",
+  "gui.deathbsod.about_start_gui.label_but_will_close_any_unsaved_stuff": "But Will Close Any Unsaved Stuff",
+  "gui.deathbsod.about_start_gui.label_help": "HELP:"
+}

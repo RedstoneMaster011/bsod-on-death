@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "dev.redstone.deathbsod.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.deathbsod.refmap.json",
+  "mixins": [
+
+  ],
+  "client": [
+
+  ],
+  "minVersion": "0.8"
+}

@@ -1,0 +1,159 @@
+{
+  "mod_elements": [
+    {
+      "name": "WhenDeath",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "when_death",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/redstone/deathbsod/procedures/WhenDeathProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BSOD",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bsod",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/redstone/deathbsod/procedures/BSODProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "ExportResource",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "export_resource",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/redstone/deathbsod/procedures/ExportResourceProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Join",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "join",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/redstone/deathbsod/procedures/JoinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Exit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exit",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/redstone/deathbsod/procedures/ExitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AboutStartGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "about_start_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/redstone/deathbsod/world/inventory/AboutStartGuiMenu.java",
+          "src/main/java/dev/redstone/deathbsod/client/gui/AboutStartGuiScreen.java",
+          "src/main/java/dev/redstone/deathbsod/network/AboutStartGuiButtonMessage.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "FirstJoin",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "gui.deathbsod.about_start_gui.label_your_pc_when_you_die": "Your PC When You Die",
+      "gui.deathbsod.about_start_gui.label_this_mod_blue_screens_your_pc_wh": "This Mod Blue Screens",
+      "gui.deathbsod.about_start_gui.label_it_wont_damage_your_pc_but_will": "It Wont Damage Your PC,",
+      "gui.deathbsod.about_start_gui.label_windows_only": "Windows Only.",
+      "gui.deathbsod.about_start_gui.label_but": "BUT",
+      "gui.deathbsod.about_start_gui.label_req_python_powershell_java": "Req: Python, Powershell, Java",
+      "gui.deathbsod.about_start_gui.label_have_fun": "Have Fun!",
+      "gui.deathbsod.about_start_gui.button_accept_conditions": "Accept Conditions",
+      "gui.deathbsod.about_start_gui.label_info": "Info",
+      "gui.deathbsod.about_start_gui.label_but_will_close_any_unsaved_stuff": "But Will Close Any Unsaved Stuff",
+      "gui.deathbsod.about_start_gui.label_help": "HELP:"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "deathbsod",
+    "modName": "DeathBSOD",
+    "version": "1.0.0",
+    "author": "RedstoneMaster01",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "dev.redstone.deathbsod"
+  },
+  "mcreatorVersion": 202400451119
+}
