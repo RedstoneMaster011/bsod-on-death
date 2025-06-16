@@ -109,6 +109,18 @@
           "src/main/java/dev/redstone/deathbsod/network/AboutStartGuiButtonMessage.java"
         ]
       }
+    },
+    {
+      "name": "NoRespawn",
+      "type": "mixin",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "no_respawn",
+      "metadata": {
+        "files": [
+          "src/main/java/dev/redstone/deathbsod/mixins/NoRespawnMixin.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
