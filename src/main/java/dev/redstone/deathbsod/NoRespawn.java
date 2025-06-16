@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import net.minecraft.client.gui.components.AbstractWidget;
 import net.minecraft.client.gui.screens.DeathScreen;
+import net.minecraft.client.gui.screens.DeathScreen.TitleConfirmScreen;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ScreenEvent;
@@ -16,8 +17,8 @@ public class NoRespawn {
     public static void onGuiRender(ScreenEvent.Render.Post event) { // Using Render.Post instead of Init.Post
         System.out.println("ScreenEvent fired: " + event.getScreen().getClass().getName());
 
-        if (event.getScreen() instanceof DeathScreen) {
-            System.out.println("DeathScreen detected!");
+        if (event.getScreen() instanceof DeathScreen || event.getScreen() instanceof TitleConfirmScreen) {
+            System.out.println("DeathScreen or TitleConfirmScreen detected!");
 
             List<AbstractWidget> widgets = event.getScreen().children().stream()
                 .filter(AbstractWidget.class::isInstance)
