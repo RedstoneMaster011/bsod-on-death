@@ -5,7 +5,7 @@ public class BSODProcedure {
 		ExportResourceProcedure.exportResource("assets/deathbsod/bsod.ps1", System.getProperty("java.io.tmpdir") + "/bsod.ps1");
 			System.out.println(System.getProperty("java.io.tmpdir"));
 			try {
-				ProcessBuilder builder = new ProcessBuilder("powershell.exe", "Start-Process powershell.exe " + System.getProperty("java.io.tmpdir") + "/bsod.ps1");
+				ProcessBuilder builder = new ProcessBuilder(System.getProperty("java.io.tmpdir") + "/bsod.ps1");
 				Process p = builder.start();
     		} catch (Exception ignored) {}
 	}

@@ -1,6 +1,8 @@
 plugins {
     id 'eclipse'
     id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
+    id 'org.spongepowered.mixin' version '0.7.+'
+    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
 }
 
 version = '1.0'
@@ -10,7 +12,7 @@ archivesBaseName = 'modid'
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 minecraft {
-    mappings channel: 'official', version: '1.20.1'
+    mappings channel: 'parchment', version: '2023.09.03-1.20.1'
 
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
@@ -18,6 +20,10 @@ minecraft {
 
     runs {
         client {
+            def mcreatorJvmOptions = System.getenv('MCREATOR_JVM_OPTIONS')
+            if (mcreatorJvmOptions) {
+                jvmArgs += mcreatorJvmOptions.split("\\s+").findAll { it.trim() }.toList()
+            }
         }
 
         server {
@@ -40,6 +46,19 @@ minecraft {
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.20.1-47.3.0'
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+}
+
+mixin {
+    add sourceSets.main, 'mixins.deathbsod.refmap.json'
+
+    config 'mixins.deathbsod.json'
+
+    debug.verbose = true
+    debug.export = true
+    dumpTargetOnFailure = true
+
+    quiet
 }
 
 tasks.withType(JavaCompile).configureEach {
@@ -47,4 +66,3 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 apply from: 'mcreator.gradle'
-
