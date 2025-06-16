@@ -141,7 +141,7 @@
       "gui.deathbsod.about_start_gui.label_it_wont_damage_your_pc_but_will": "It Wont Damage Your PC,",
       "gui.deathbsod.about_start_gui.label_windows_only": "Windows Only.",
       "gui.deathbsod.about_start_gui.label_but": "BUT",
-      "gui.deathbsod.about_start_gui.label_req_python_powershell_java": "Req: Python, Powershell, Java",
+      "gui.deathbsod.about_start_gui.label_req_python_powershell_java": "Req: Python, Windows OS",
       "gui.deathbsod.about_start_gui.label_have_fun": "Have Fun!",
       "gui.deathbsod.about_start_gui.button_accept_conditions": "Accept Conditions",
       "gui.deathbsod.about_start_gui.label_info": "Info",

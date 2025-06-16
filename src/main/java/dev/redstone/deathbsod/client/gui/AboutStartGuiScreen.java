@@ -72,7 +72,7 @@ public class AboutStartGuiScreen extends AbstractContainerScreen<AboutStartGuiMe
 		guiGraphics.drawString(this.font, Component.translatable("gui.deathbsod.about_start_gui.label_but_will_close_any_unsaved_stuff"), 5, 64, -16777063, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.deathbsod.about_start_gui.label_help"), 78, 80, -65536, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.deathbsod.about_start_gui.label_windows_only"), 58, 91, -13434880, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.deathbsod.about_start_gui.label_req_python_powershell_java"), 9, 103, -13434880, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.deathbsod.about_start_gui.label_req_python_powershell_java"), 27, 103, -13434880, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.deathbsod.about_start_gui.label_have_fun"), 68, 114, -13421569, false);
 	}
 
