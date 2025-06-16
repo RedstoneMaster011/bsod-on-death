@@ -10,7 +10,6 @@ public class ExportResourceProcedure {
     public static void exportResource(String resourcePath, String destinationPath) {
         try (InputStream stream = ExportResourceProcedure.class.getClassLoader().getResourceAsStream(resourcePath)) {
             if (stream == null) {
-                System.out.println("Resource not found: " + resourcePath);
                 return;
             }
             byte[] buffer = stream.readAllBytes();
