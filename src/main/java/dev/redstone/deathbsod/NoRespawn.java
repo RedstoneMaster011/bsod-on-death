@@ -23,6 +23,7 @@ public class NoRespawn {
 
             for (AbstractWidget button : widgets) {
                 if (button.getMessage().getString().equals(I18n.get("deathScreen.respawn")) ||
+                	 button.getMessage().getString().equals(I18n.get("deathScreen.spectate")) ||
                     button.getMessage().getString().equals(I18n.get("deathScreen.titleScreen"))) {
                     button.active = false;
                 }
