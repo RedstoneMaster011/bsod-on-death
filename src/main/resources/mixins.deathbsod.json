@@ -7,7 +7,7 @@
 
   ],
   "client": [
-            "NoRespawnMixin"
+
   ],
   "minVersion": "0.8"
 }

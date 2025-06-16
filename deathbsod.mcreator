@@ -112,13 +112,13 @@
     },
     {
       "name": "NoRespawn",
-      "type": "mixin",
+      "type": "code",
       "compiles": true,
       "locked_code": true,
       "registry_name": "no_respawn",
       "metadata": {
         "files": [
-          "src/main/java/dev/redstone/deathbsod/mixins/NoRespawnMixin.java"
+          "src/main/java/dev/redstone/deathbsod/NoRespawn.java"
         ]
       }
     }
